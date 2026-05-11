@@ -23,6 +23,7 @@ def tuple_length():
 def single_element_tuple():
     """Create a tuple with one element"""
     single = (5,)  # NOTE the comma!
+    print(type(single))
     print("Single element tuple:", single)
 
 
@@ -70,13 +71,17 @@ def count_and_index():
 def convert_tuple_list():
     """Convert between tuple and list"""
     numbers = (1, 2, 3)
+    print(type(numbers))
 
-    numbers_list = list(numbers)
+    numbers_list = list(numbers) # type cast tuple to list
+    print(type(numbers_list))
     print("Tuple to list:", numbers_list)
 
     numbers_list.append(4)
+    numbers_list.append(5)
 
-    numbers_tuple = tuple(numbers_list)
+    numbers_tuple = tuple(numbers_list) # type cast list to tuple
+    print(type(numbers_tuple))
     print("List back to tuple:", numbers_tuple)
 
 
@@ -92,10 +97,12 @@ def unpack_tuple():
 
 def nested_tuple():
     """Example of nested tuple"""
-    nested = ((1, 2), (3, 4), (5, 6))
+    nested = ((1, 2), 
+              (3, 4), 
+              (5, 6))
 
     print("Nested tuple:", nested)
-    print("Access inner element:", nested[1][0])  # 3
+    print("Access inner element:", nested[1][1])  # 3
 
 
 def tuple_immutability():
@@ -125,14 +132,11 @@ def main():
     # print("\n--- LOOP TUPLE ---")
     # loop_tuple()
 
-    # print("\n--- CHECK MEMBERSHIP ---")
-    # check_membership()
-    
-    print("\n--- Sort list ---")
-    sort_list()
-    
-    # print("\n--- COUNT AND INDEX ---")
-    # count_and_index()
+    print("\n--- CHECK MEMBERSHIP ---")
+    check_membership()
+
+    print("\n--- COUNT AND INDEX ---")
+    count_and_index()
 
     # print("\n--- CONVERT TUPLE & LIST ---")
     # convert_tuple_list()
