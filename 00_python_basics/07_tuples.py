@@ -50,6 +50,14 @@ def check_membership():
     print("Is apple in tuple?", "apple" in fruits)
     print("Is mango in tuple?", "mango" in fruits)
 
+def sort_list():
+    #Sort a list
+    numbers= [5,2,9,1,3]
+    
+    numbers= sorted(numbers)
+    numbers.sort()
+    print("Sorted list: ", numbers)
+
 
 def count_and_index():
     """Use count() and index()"""
@@ -99,41 +107,44 @@ def tuple_immutability():
 
 
 def main():
-    print("\n--- CREATE TUPLE ---")
-    create_tuple()
+    # print("\n--- CREATE TUPLE ---")
+    # create_tuple()
 
-    print("\n--- ACCESS ELEMENTS ---")
-    access_elements()
+    # print("\n--- ACCESS ELEMENTS ---")
+    # access_elements()
 
-    print("\n--- TUPLE LENGTH ---")
-    tuple_length()
+    # print("\n--- TUPLE LENGTH ---")
+    # tuple_length()
 
-    print("\n--- SINGLE ELEMENT TUPLE ---")
-    single_element_tuple()
+    # print("\n--- SINGLE ELEMENT TUPLE ---")
+    # single_element_tuple()
 
-    print("\n--- TUPLE SLICING ---")
-    tuple_slicing()
+    # print("\n--- TUPLE SLICING ---")
+    # tuple_slicing()
 
-    print("\n--- LOOP TUPLE ---")
-    loop_tuple()
+    # print("\n--- LOOP TUPLE ---")
+    # loop_tuple()
 
-    print("\n--- CHECK MEMBERSHIP ---")
-    check_membership()
+    # print("\n--- CHECK MEMBERSHIP ---")
+    # check_membership()
+    
+    print("\n--- Sort list ---")
+    sort_list()
+    
+    # print("\n--- COUNT AND INDEX ---")
+    # count_and_index()
 
-    print("\n--- COUNT AND INDEX ---")
-    count_and_index()
+    # print("\n--- CONVERT TUPLE & LIST ---")
+    # convert_tuple_list()
 
-    print("\n--- CONVERT TUPLE & LIST ---")
-    convert_tuple_list()
+    # print("\n--- UNPACK TUPLE ---")
+    # unpack_tuple()
 
-    print("\n--- UNPACK TUPLE ---")
-    unpack_tuple()
+    # print("\n--- NESTED TUPLE ---")
+    # nested_tuple()
 
-    print("\n--- NESTED TUPLE ---")
-    nested_tuple()
-
-    print("\n--- TUPLE IMMUTABILITY ---")
-    tuple_immutability()
+    # print("\n--- TUPLE IMMUTABILITY ---")
+    # tuple_immutability()
 
 
 if __name__ == "__main__":
