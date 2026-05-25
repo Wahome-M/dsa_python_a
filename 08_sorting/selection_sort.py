@@ -11,7 +11,7 @@ def selectionSort(unsorted_list):
         temp = unsorted_list[outer_loop]
         unsorted_list[outer_loop] = unsorted_list[minimum_index]
         unsorted_list[minimum_index] = temp
-        # print(f"After {unsorted_list}")
+        print(f"After {unsorted_list}")
 
     return unsorted_list
 
